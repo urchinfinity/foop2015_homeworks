@@ -1,0 +1,14 @@
+0. create a JFrame (class construction: new), an "updated" version of java.awt.Frame that is "mostly" compatible
+1. show a JFrame (instance methods: setVisible, setSize)
+2. create a JButton, JLabel
+3. add JButton, JLabel to JFrame (why can both be added? both of class "Component")
+4. set Layout of JFrame (use another instance as "property")
+5. add ActionListener to JButton (interface: actionPerformed)
+6. extend JFrame for organizing the code inside
+7. extend JButton for connecting it with the specifc label and specific listener
+8. one ActionListener for two buttons (ActionEvent)
+9. A "CoutingLabel" class to make "count" and "label text" consistent?
+  9.1 outer listeners
+  9.2 interface
+  9.3 inner classes
+  9.4 anonymous classes

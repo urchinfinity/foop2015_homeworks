@@ -1,0 +1,31 @@
+R0 B0
+C2 D2 H2 S2
+C3 D3 H3 S3
+C4 D4 H4 S4
+C5 D5 H5 S5
+C6 D6 H6 S6
+C7 D7 H7 S7
+C8 D8 H8 S8
+C9 D9 H9 S9
+C10 D10 H10 S10
+CJ DJ HJ SJ
+CQ DQ HQ SQ
+CK DK HK SK
+CA DA HA SA
+
+*make [player_num] a variable to guarantee game could be continued after a player drops all cards
+
+*//create an array cantaining repeated userID [user1 ID, ..., user1 ID, user2 ID, ...]
+*//implement Fisher–Yates shuffle, each user would abtain corresponding cards in ascending order
+*//drop paired cards, start with C2(2)
+*  algorithm:
+*    if (card[i]-2)/4 == (card[i+1]-2)/4
+*      drop card[i] and card[i+1]
+*  note:
+*    skip dropped card
+*    notice the last card
+*//before&after drawing card, check if the current player has no card
+*//get random number with corresponding card length to draw a card from another player
+*//go through the array and insert, check the cards before/after to see if there exists paired cards
+*//check if the current player(s) has no card, if yes, the current player(s) is out of the game
+
